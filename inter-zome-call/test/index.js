@@ -42,6 +42,7 @@ const conductorConfig = Config.gen(
   }
 );
 
+// Thanks to @guillemcordoba for this pattern
 function sumAndGetAddress(num1, num2) {
   return (caller) => 
     caller.call("interZomeCall", "caller", "sum_and_get_address", {
